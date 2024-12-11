@@ -22,6 +22,6 @@ enum Mock {
 
     static func mediaComposition(_ kind: MediaCompositionKind = .onDemand) -> MediaComposition {
         let data = NSDataAsset(name: "MediaComposition_\(kind.rawValue)", bundle: .module)!.data
-        return try! DataProvider.decoder().decode(MediaComposition.self, from: data)
+        return try! UrnDataProvider.decoder().decode(MediaComposition.self, from: data)
     }
 }

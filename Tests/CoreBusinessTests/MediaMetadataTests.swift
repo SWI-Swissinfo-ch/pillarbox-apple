@@ -16,7 +16,7 @@ final class MediaMetadataTests: XCTestCase {
                 mediaComposition: Mock.mediaComposition(kind),
                 response: .init()
             ),
-            dataProvider: DataProvider()
+            dataProvider: UrnDataProvider()
         )
     }
 
